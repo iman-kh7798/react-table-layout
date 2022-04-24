@@ -1,0 +1,55 @@
+.table {
+    text-align: right;
+    box-shadow: 0px -1px 12px rgba(0, 0, 0, 0.14), 0px 8px 12px #00000024;
+    border-radius: 1.2rem;
+    padding: 0 1.2rem;
+    border-collapse: collapse;
+    table {
+      width: 100%;
+    }
+    th,
+    td {
+      padding: 1.5rem 3rem;
+      line-height: 4rem;
+      font-size: 1.2rem;
+    }
+    tbody tr {
+      position: relative;
+      &::after {
+        content: "";
+        border: 1px solid #ebebeb;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 0 1.2rem;
+        // border-top: 1px solid $secondary;
+      }
+    }
+    th {
+    //   color: $secondary;
+    }
+  }
+  
+  .ellipses {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    & > span {
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: rgba($color: black, $alpha: 0.5);
+      border-radius: 50%;
+    }
+  }
+  
+  .menu-popover {
+    .MuiPaper-root {
+    //   border-radius: $primary-radius;
+    //   box-shadow: $search-shadows;
+    }
+    ul {
+      width: 19rem;
+    }
+  }
+  
